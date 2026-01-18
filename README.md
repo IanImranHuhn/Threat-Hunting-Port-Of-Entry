@@ -416,6 +416,8 @@ DeviceProcessEvents
 ```
 **Result:** mm.exe (renamed mimikatz) identified
 
+<img width="1783" height="327" alt="111111____111111111" src="https://github.com/user-attachments/assets/f9d80300-811c-4b7e-b7a0-f60b69fbfdad" />
+
 ---
 
 **Query 12: Credential Access - Memory Extraction Module**
@@ -428,6 +430,8 @@ DeviceProcessEvents
 ```
 **Result:** sekurlsa::logonpasswords module used for credential extraction
 
+<img width="1792" height="350" alt="11111111________222222222222" src="https://github.com/user-attachments/assets/e21e94fe-d2ae-48f1-b4cc-81fb30860625" />
+
 ---
 
 **Query 13: Collection - Data Archive Creation**
@@ -439,6 +443,8 @@ DeviceProcessEvents
 | project ProcessCommandLine
 ```
 **Result:** export-data.zip created for exfiltration
+
+<img width="1779" height="338" alt="1111111111__33333333" src="https://github.com/user-attachments/assets/7b46f1e2-44ac-4bba-9a9d-194f4c986f27" />
 
 ---
 
@@ -453,6 +459,8 @@ DeviceNetworkEvents
 ```
 **Result:** Discord identified as exfiltration channel
 
+<img width="1797" height="298" alt="1111--------444444" src="https://github.com/user-attachments/assets/ea489b3c-9589-4723-a720-3ce3a3702669" />
+
 ---
 
 **Query 15: Anti-Forensics - Event Log Clearing**
@@ -465,6 +473,8 @@ DeviceProcessEvents
 | sort by TimeGenerated asc
 ```
 **Result:** Security log cleared first using wevtutil.exe
+
+<img width="1803" height="449" alt="1111111----------5555555" src="https://github.com/user-attachments/assets/6aa0bafd-2a22-4085-9918-d05648498f04" />
 
 ---
 
