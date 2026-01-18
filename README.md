@@ -3,12 +3,12 @@
 ## TABLE OF CONTENT:
 1. [Summary](#summary-of-findings)
 2. [Who, What, When, Where, Why, How](#who-what-when-where-why-how)
-3. [Impact Assessment]()
-4. [Recommendations]()
-5. [Indicators of Compromise]()
-6. [MITRE ATT&CK Mapping]()
-7. [Investigation Timeline]()
-8. [Investigation Queries]()
+4. [Impact Assessment](#impact-assessment)
+5. [Recommendations](#recommendations)
+6. [Indicators of Compromise](#a-indicators-of-compromise)
+7. [MITRE ATT&CK Mapping](#b-mitre-attck-mapping)
+8. [Investigation Timeline](#c-investigation-timeline)
+9. [Investigation Queries](#d-investigation-queries)
 
 ## INCIDENT RESPONSE REPORT
 
