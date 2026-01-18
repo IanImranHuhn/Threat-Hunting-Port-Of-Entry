@@ -270,7 +270,7 @@ DeviceLogonEvents
 ```
 **Result:** Identified external remote access from 88.97.178.12
 
-<img width="1796" height="307" alt="1111111111" src="https://github.com/user-attachments/assets/cb334eb3-1f94-49a7-bddb-7c239cb3e547" />
+<img width="1796" height="307" alt="1" src="https://github.com/user-attachments/assets/cb334eb3-1f94-49a7-bddb-7c239cb3e547" />
 
 ---
 
@@ -286,7 +286,7 @@ DeviceLogonEvents
 ```
 **Result:** Identified user account in question is kenji.sato
 
-<img width="1796" height="307" alt="1111111111" src="https://github.com/user-attachments/assets/cb334eb3-1f94-49a7-bddb-7c239cb3e547" />
+<img width="1796" height="307" alt="2" src="https://github.com/user-attachments/assets/cb334eb3-1f94-49a7-bddb-7c239cb3e547" />
 
 ---
 
@@ -302,7 +302,7 @@ DeviceProcessEvents
 ```
 **Result:** ARP.EXE -a command executed for network neighbor enumeration
 
-<img width="1783" height="297" alt="22222222" src="https://github.com/user-attachments/assets/c5b74014-a952-4dac-ba74-ef725e4103b9" />
+<img width="1783" height="297" alt="3" src="https://github.com/user-attachments/assets/c5b74014-a952-4dac-ba74-ef725e4103b9" />
 
 ---
 
@@ -317,7 +317,7 @@ DeviceProcessEvents
 ```
 **Result:** C:\ProgramData\WindowsCache created and hidden using attrib command
 
-<img width="1787" height="294" alt="3333333333" src="https://github.com/user-attachments/assets/3b1524cf-bc2a-41ac-b92b-68b084b8ac93" />
+<img width="1787" height="294" alt="4" src="https://github.com/user-attachments/assets/3b1524cf-bc2a-41ac-b92b-68b084b8ac93" />
 
 ---
 
@@ -330,7 +330,7 @@ DeviceRegistryEvents
 ```
 **Result:** 3 file extensions added to Windows Defender exclusions
 
-<img width="1790" height="356" alt="44444444444444" src="https://github.com/user-attachments/assets/1e0d9e81-0355-4aaa-bf5a-ed7b5cca5bfe" />
+<img width="1790" height="356" alt="5" src="https://github.com/user-attachments/assets/1e0d9e81-0355-4aaa-bf5a-ed7b5cca5bfe" />
 
 ---
 
@@ -345,7 +345,7 @@ DeviceRegistryEvents
 ```
 **Result:** C:\Users\KENJI~1.SAT\AppData\Local\Temp excluded from scanning
 
-<img width="1802" height="309" alt="555555555555" src="https://github.com/user-attachments/assets/0ea2a68f-d19a-4548-9a0c-8c6108563d18" />
+<img width="1802" height="309" alt="6" src="https://github.com/user-attachments/assets/0ea2a68f-d19a-4548-9a0c-8c6108563d18" />
 
 ---
 
@@ -359,7 +359,7 @@ DeviceProcessEvents
 ```
 **Result:** certutil.exe abused for downloading malicious files
 
-<img width="1791" height="431" alt="6666666666666" src="https://github.com/user-attachments/assets/898169d0-2805-4989-ae3a-1e7a47a5a973" />
+<img width="1791" height="431" alt="7" src="https://github.com/user-attachments/assets/898169d0-2805-4989-ae3a-1e7a47a5a973" />
 
 ---
 
@@ -374,7 +374,7 @@ DeviceProcessEvents
 ```
 **Result:** Scheduled task "Windows Update Check" created for persistence
 
-<img width="1785" height="368" alt="7777777777777" src="https://github.com/user-attachments/assets/0c553094-ee5c-4ca6-9a14-cd417584760f" />
+<img width="1785" height="368" alt="8" src="https://github.com/user-attachments/assets/0c553094-ee5c-4ca6-9a14-cd417584760f" />
 
 ---
 
@@ -389,7 +389,7 @@ DeviceProcessEvents
 ```
 **Result:** Task configured to execute C:\ProgramData\WindowsCache\svchost.exe
 
-<img width="1796" height="378" alt="88888888888" src="https://github.com/user-attachments/assets/1de71a12-680d-459f-83a0-ec9787a30827" />
+<img width="1796" height="378" alt="9" src="https://github.com/user-attachments/assets/1de71a12-680d-459f-83a0-ec9787a30827" />
 
 ---
 
@@ -404,7 +404,7 @@ DeviceNetworkEvents
 ```
 **Result:** C2 connection to 78.141.196.6 identified
 
-<img width="1794" height="322" alt="99999999999999" src="https://github.com/user-attachments/assets/6df91bc8-1820-44b5-88a8-0f2ad947f308" />
+<img width="1794" height="322" alt="10" src="https://github.com/user-attachments/assets/6df91bc8-1820-44b5-88a8-0f2ad947f308" />
 
 ---
 
@@ -418,7 +418,7 @@ DeviceNetworkEvents
 ```
 **Result:** C2 communication on port 443 (HTTPS)
 
-<img width="1790" height="284" alt="1111111000000000000" src="https://github.com/user-attachments/assets/51b3627b-7e37-475d-8fc6-75eddd601d03" />
+<img width="1790" height="284" alt="11" src="https://github.com/user-attachments/assets/51b3627b-7e37-475d-8fc6-75eddd601d03" />
 
 ---
 
@@ -432,7 +432,7 @@ DeviceProcessEvents
 ```
 **Result:** mm.exe (renamed mimikatz) identified
 
-<img width="1783" height="327" alt="111111____111111111" src="https://github.com/user-attachments/assets/f9d80300-811c-4b7e-b7a0-f60b69fbfdad" />
+<img width="1783" height="327" alt="12" src="https://github.com/user-attachments/assets/f9d80300-811c-4b7e-b7a0-f60b69fbfdad" />
 
 ---
 
@@ -446,7 +446,7 @@ DeviceProcessEvents
 ```
 **Result:** sekurlsa::logonpasswords module used for credential extraction
 
-<img width="1792" height="350" alt="11111111________222222222222" src="https://github.com/user-attachments/assets/e21e94fe-d2ae-48f1-b4cc-81fb30860625" />
+<img width="1792" height="350" alt="13" src="https://github.com/user-attachments/assets/e21e94fe-d2ae-48f1-b4cc-81fb30860625" />
 
 ---
 
@@ -460,7 +460,7 @@ DeviceProcessEvents
 ```
 **Result:** export-data.zip created for exfiltration
 
-<img width="1779" height="338" alt="1111111111__33333333" src="https://github.com/user-attachments/assets/7b46f1e2-44ac-4bba-9a9d-194f4c986f27" />
+<img width="1779" height="338" alt="14" src="https://github.com/user-attachments/assets/7b46f1e2-44ac-4bba-9a9d-194f4c986f27" />
 
 ---
 
@@ -475,7 +475,7 @@ DeviceNetworkEvents
 ```
 **Result:** Discord identified as exfiltration channel
 
-<img width="1797" height="298" alt="1111--------444444" src="https://github.com/user-attachments/assets/ea489b3c-9589-4723-a720-3ce3a3702669" />
+<img width="1797" height="298" alt="15" src="https://github.com/user-attachments/assets/ea489b3c-9589-4723-a720-3ce3a3702669" />
 
 ---
 
@@ -490,7 +490,7 @@ DeviceProcessEvents
 ```
 **Result:** Security log cleared first using wevtutil.exe
 
-<img width="1803" height="449" alt="1111111----------5555555" src="https://github.com/user-attachments/assets/6aa0bafd-2a22-4085-9918-d05648498f04" />
+<img width="1803" height="449" alt="16" src="https://github.com/user-attachments/assets/6aa0bafd-2a22-4085-9918-d05648498f04" />
 
 ---
 
@@ -503,6 +503,8 @@ DeviceProcessEvents
 | project ProcessCommandLine, TimeGenerated
 ```
 **Result:** Backdoor account "support" created with administrator privileges
+
+<img width="1793" height="314" alt="17" src="https://github.com/user-attachments/assets/592b9515-325d-4ffd-b9a3-41e5310b4b88" />
 
 ---
 
@@ -519,6 +521,8 @@ DeviceFileEvents
 ```
 **Result:** wupdate.ps1 PowerShell script downloaded to automate attack chain
 
+<img width="1800" height="489" alt="18" src="https://github.com/user-attachments/assets/71659641-6c63-454c-98d4-6d916fb0666d" />
+
 ---
 
 **Query 19: Lateral Movement - Target Identification**
@@ -530,6 +534,8 @@ DeviceProcessEvents
 | project ProcessCommandLine
 ```
 **Result:** 10.1.0.188 targeted for lateral movement
+
+<img width="1801" height="426" alt="19" src="https://github.com/user-attachments/assets/112fd7d3-53d0-434a-a204-f71e738fc40f" />
 
 ---
 
@@ -543,3 +549,6 @@ DeviceProcessEvents
 ```
 **Result:** mstsc.exe (Remote Desktop) used for lateral movement
 
+<img width="1795" height="349" alt="20" src="https://github.com/user-attachments/assets/2117dff1-9a49-4d24-beca-9038ee11c9f3" />
+
+---
