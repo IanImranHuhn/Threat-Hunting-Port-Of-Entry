@@ -246,13 +246,7 @@
 
 ---
 
-### D. Evidence & Screenshots
-
-*Evidence collected from Microsoft Defender for Endpoint / Sentinel logs during investigation timeframe 2025-11-19 to 2025-11-20*
-
----
-
-### E. Investigation Queries
+### D. Investigation Queries
 
 **Query 1: Initial Access - RDP Connection Analysis**
 ```kql
