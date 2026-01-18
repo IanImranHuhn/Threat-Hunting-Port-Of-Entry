@@ -502,6 +502,3 @@ DeviceProcessEvents
 | where TimeGenerated between (datetime(2025-11-19) .. datetime(2025-11-20))
 ```
 **Result:** All process events during incident timeframe for comprehensive analysis
-
----
-
