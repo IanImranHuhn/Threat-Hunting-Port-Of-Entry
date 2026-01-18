@@ -258,7 +258,7 @@
 
 ### D. Investigation Queries
 
-**Query 1: Initial Access - RDP Connection Analysis**
+**Query 1: Initial Access - Remote Connection Analysis**
 ```kql
 DeviceLogonEvents
 | where DeviceName == "azuki-sl"
@@ -268,13 +268,29 @@ DeviceLogonEvents
 | where TimeGenerated between (datetime(2025-11-19) .. datetime(2025-11-20))
 | project RemoteIP, AccountName
 ```
-**Result:** Identified external RDP access from 88.97.178.12 using account kenji.sato
+**Result:** Identified external remote access from 88.97.178.12
 
 <img width="1796" height="307" alt="1111111111" src="https://github.com/user-attachments/assets/cb334eb3-1f94-49a7-bddb-7c239cb3e547" />
 
 ---
 
-**Query 2: Discovery - Network Reconnaissance**
+**Query 2: Initial Access - Compromised User Account**
+```kql
+DeviceLogonEvents
+| where DeviceName == "azuki-sl"
+| where ActionType == "LogonSuccess"
+| where isnotempty(RemoteIP)
+| where RemoteIPType == "Public"
+| where TimeGenerated between (datetime(2025-11-19) .. datetime(2025-11-20))
+| project RemoteIP, AccountName
+```
+**Result:** Identified user account in question is kenji.sato
+
+<img width="1796" height="307" alt="1111111111" src="https://github.com/user-attachments/assets/cb334eb3-1f94-49a7-bddb-7c239cb3e547" />
+
+---
+
+**Query 3: Discovery - Network Reconnaissance**
 ```kql
 DeviceProcessEvents
 | where AccountName == "kenji.sato"
@@ -290,7 +306,7 @@ DeviceProcessEvents
 
 ---
 
-**Query 3: Defense Evasion - Staging Directory Creation**
+**Query 4: Defense Evasion - Staging Directory Creation**
 ```kql
 DeviceProcessEvents
 | where DeviceName == "azuki-sl"
@@ -305,7 +321,7 @@ DeviceProcessEvents
 
 ---
 
-**Query 4: Defense Evasion - Defender Extension Exclusions**
+**Query 5: Defense Evasion - Defender Extension Exclusions**
 ```kql
 DeviceRegistryEvents
 | where DeviceName == "azuki-sl"
@@ -318,7 +334,7 @@ DeviceRegistryEvents
 
 ---
 
-**Query 5: Defense Evasion - Defender Path Exclusions**
+**Query 6: Defense Evasion - Defender Path Exclusions**
 ```kql
 DeviceRegistryEvents
 | where DeviceName == "azuki-sl"
@@ -333,7 +349,7 @@ DeviceRegistryEvents
 
 ---
 
-**Query 6: Defense Evasion - Living Off The Land Binary Abuse**
+**Query 7: Defense Evasion - Living Off The Land Binary Abuse**
 ```kql
 DeviceProcessEvents
 | where AccountName == "kenji.sato"
@@ -347,7 +363,7 @@ DeviceProcessEvents
 
 ---
 
-**Query 7: Persistence - Scheduled Task Creation**
+**Query 8: Persistence - Scheduled Task Creation**
 ```kql
 DeviceProcessEvents
 | where AccountName == "kenji.sato"
@@ -362,7 +378,7 @@ DeviceProcessEvents
 
 ---
 
-**Query 8: Persistence - Scheduled Task Target**
+**Query 9: Persistence - Scheduled Task Target**
 ```kql
 DeviceProcessEvents
 | where AccountName == "kenji.sato"
@@ -377,7 +393,7 @@ DeviceProcessEvents
 
 ---
 
-**Query 9: Command & Control - C2 Server Identification**
+**Query 10: Command & Control - C2 Server Identification**
 ```kql
 DeviceNetworkEvents
 | where DeviceName == "azuki-sl"
@@ -392,7 +408,7 @@ DeviceNetworkEvents
 
 ---
 
-**Query 10: Command & Control - C2 Port Analysis**
+**Query 11: Command & Control - C2 Port Analysis**
 ```kql
 DeviceNetworkEvents
 | where DeviceName == "azuki-sl"
@@ -406,7 +422,7 @@ DeviceNetworkEvents
 
 ---
 
-**Query 11: Credential Access - Credential Dumping Tool**
+**Query 12: Credential Access - Credential Dumping Tool**
 ```kql
 DeviceProcessEvents
 | where AccountName == "kenji.sato"
@@ -420,7 +436,7 @@ DeviceProcessEvents
 
 ---
 
-**Query 12: Credential Access - Memory Extraction Module**
+**Query 13: Credential Access - Memory Extraction Module**
 ```kql
 DeviceProcessEvents
 | where AccountName == "kenji.sato"
@@ -434,7 +450,7 @@ DeviceProcessEvents
 
 ---
 
-**Query 13: Collection - Data Archive Creation**
+**Query 14: Collection - Data Archive Creation**
 ```kql
 DeviceProcessEvents
 | where AccountName == "kenji.sato"
@@ -448,7 +464,7 @@ DeviceProcessEvents
 
 ---
 
-**Query 14: Exfiltration - Cloud Service Identification**
+**Query 15: Exfiltration - Cloud Service Identification**
 ```kql
 DeviceNetworkEvents
 | where DeviceName == "azuki-sl"
@@ -463,7 +479,7 @@ DeviceNetworkEvents
 
 ---
 
-**Query 15: Anti-Forensics - Event Log Clearing**
+**Query 16: Anti-Forensics - Event Log Clearing**
 ```kql
 DeviceProcessEvents
 | where AccountName == "kenji.sato"
@@ -478,7 +494,7 @@ DeviceProcessEvents
 
 ---
 
-**Query 16: Impact - Backdoor Account Creation**
+**Query 17: Impact - Backdoor Account Creation**
 ```kql
 DeviceProcessEvents
 | where AccountName == "kenji.sato"
@@ -490,7 +506,7 @@ DeviceProcessEvents
 
 ---
 
-**Query 17: Execution - Malicious Script Identification**
+**Query 18: Execution - Malicious Script Identification**
 ```kql
 DeviceFileEvents
 | where DeviceName == "azuki-sl"
@@ -505,7 +521,7 @@ DeviceFileEvents
 
 ---
 
-**Query 18: Lateral Movement - Target Identification**
+**Query 19: Lateral Movement - Target Identification**
 ```kql
 DeviceProcessEvents
 | where AccountName == "kenji.sato"
@@ -517,7 +533,7 @@ DeviceProcessEvents
 
 ---
 
-**Query 19: Lateral Movement - Remote Access Tool**
+**Query 20: Lateral Movement - Remote Access Tool**
 ```kql
 DeviceProcessEvents
 | where AccountName == "kenji.sato"
@@ -527,12 +543,3 @@ DeviceProcessEvents
 ```
 **Result:** mstsc.exe (Remote Desktop) used for lateral movement
 
----
-
-**Query 20: Timeline Scoping**
-```kql
-DeviceProcessEvents
-| where DeviceName == "azuki-sl"
-| where TimeGenerated between (datetime(2025-11-19) .. datetime(2025-11-20))
-```
-**Result:** All process events during incident timeframe for comprehensive analysis
