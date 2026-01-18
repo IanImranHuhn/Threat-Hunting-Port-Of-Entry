@@ -1,5 +1,15 @@
 # Threat Hunt: Port of Entry
 
+## TABLE OF CONTENT:
+1. Summary
+2. Who, What, When, Where, Why, How
+3. Impact Assessment
+4. Recommendations
+5. Indicators of Compromise
+6. MITRE ATT&CK Mapping
+7. Investigation Timeline
+8. Investigation Queries
+
 ## INCIDENT RESPONSE REPORT
 
 **Date of Report:** 2026-01-18  
