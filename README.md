@@ -270,6 +270,8 @@ DeviceLogonEvents
 ```
 **Result:** Identified external RDP access from 88.97.178.12 using account kenji.sato
 
+<img width="1796" height="307" alt="1111111111" src="https://github.com/user-attachments/assets/cb334eb3-1f94-49a7-bddb-7c239cb3e547" />
+
 ---
 
 **Query 2: Discovery - Network Reconnaissance**
@@ -284,6 +286,8 @@ DeviceProcessEvents
 ```
 **Result:** ARP.EXE -a command executed for network neighbor enumeration
 
+<img width="1783" height="297" alt="22222222" src="https://github.com/user-attachments/assets/c5b74014-a952-4dac-ba74-ef725e4103b9" />
+
 ---
 
 **Query 3: Defense Evasion - Staging Directory Creation**
@@ -297,6 +301,8 @@ DeviceProcessEvents
 ```
 **Result:** C:\ProgramData\WindowsCache created and hidden using attrib command
 
+<img width="1787" height="294" alt="3333333333" src="https://github.com/user-attachments/assets/3b1524cf-bc2a-41ac-b92b-68b084b8ac93" />
+
 ---
 
 **Query 4: Defense Evasion - Defender Extension Exclusions**
@@ -307,6 +313,8 @@ DeviceRegistryEvents
 | where RegistryKey has_all ("Exclusions", "Extensions")
 ```
 **Result:** 3 file extensions added to Windows Defender exclusions
+
+<img width="1790" height="356" alt="44444444444444" src="https://github.com/user-attachments/assets/1e0d9e81-0355-4aaa-bf5a-ed7b5cca5bfe" />
 
 ---
 
@@ -321,6 +329,8 @@ DeviceRegistryEvents
 ```
 **Result:** C:\Users\KENJI~1.SAT\AppData\Local\Temp excluded from scanning
 
+<img width="1802" height="309" alt="555555555555" src="https://github.com/user-attachments/assets/0ea2a68f-d19a-4548-9a0c-8c6108563d18" />
+
 ---
 
 **Query 6: Defense Evasion - Living Off The Land Binary Abuse**
@@ -332,6 +342,8 @@ DeviceProcessEvents
 | summarize count() by FileName
 ```
 **Result:** certutil.exe abused for downloading malicious files
+
+<img width="1791" height="431" alt="6666666666666" src="https://github.com/user-attachments/assets/898169d0-2805-4989-ae3a-1e7a47a5a973" />
 
 ---
 
@@ -346,6 +358,8 @@ DeviceProcessEvents
 ```
 **Result:** Scheduled task "Windows Update Check" created for persistence
 
+<img width="1785" height="368" alt="7777777777777" src="https://github.com/user-attachments/assets/0c553094-ee5c-4ca6-9a14-cd417584760f" />
+
 ---
 
 **Query 8: Persistence - Scheduled Task Target**
@@ -358,6 +372,8 @@ DeviceProcessEvents
 | project ProcessCommandLine
 ```
 **Result:** Task configured to execute C:\ProgramData\WindowsCache\svchost.exe
+
+<img width="1796" height="378" alt="88888888888" src="https://github.com/user-attachments/assets/1de71a12-680d-459f-83a0-ec9787a30827" />
 
 ---
 
@@ -372,6 +388,8 @@ DeviceNetworkEvents
 ```
 **Result:** C2 connection to 78.141.196.6 identified
 
+<img width="1794" height="322" alt="99999999999999" src="https://github.com/user-attachments/assets/6df91bc8-1820-44b5-88a8-0f2ad947f308" />
+
 ---
 
 **Query 10: Command & Control - C2 Port Analysis**
@@ -383,6 +401,8 @@ DeviceNetworkEvents
 | summarize count() by RemotePort
 ```
 **Result:** C2 communication on port 443 (HTTPS)
+
+<img width="1790" height="284" alt="1111111000000000000" src="https://github.com/user-attachments/assets/51b3627b-7e37-475d-8fc6-75eddd601d03" />
 
 ---
 
