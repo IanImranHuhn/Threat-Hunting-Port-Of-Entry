@@ -13,8 +13,8 @@
 ## INCIDENT RESPONSE REPORT
 
 **Date of Report:** 2026-01-18  
-**Severity Level:** ☑ CRITICAL  
-**Report Status:** ☑ Contained  
+**Severity Level:** CRITICAL  
+**Report Status:** Contained  
 **Escalated To:** Security Operations Team  
 **Incident ID:** IR-2025-001  
 **Analyst:** SOC Analyst  
